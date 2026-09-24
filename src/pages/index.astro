@@ -1,6 +1,8 @@
 ---
 const pageTitle = "Página de inicio";
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -13,10 +15,8 @@ import '../styles/global.css';
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="about/">Sobre mi</a>
-		<br/>
-		<a href="blog/">Blog</a>
-		
 		<h1>{pageTitle}</h1>
+		<Navigation />
+		<Footer />
 	</body>
 </html>
